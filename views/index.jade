@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 洪山区留言100 
+  table(border='1')
+   thead
+    tr 
+      th id
+      th 问题
+      th 回复
+   each item in arr
+    tr
+      th=item.id
+      th=item.content
+      th=item.asContent 
